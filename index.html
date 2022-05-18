@@ -25,26 +25,13 @@
 <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&amp;display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&amp;display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Patua+One&amp;display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script>
 		 $(document).ready(function(){
@@ -57,11 +44,35 @@
 		 });
 </script>
 <style type="text/css">
+.background{
+position:fixed;
+    background:rgb(0,0,0);
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-2;
+}
+
+.overlay{
+    z-index:-1;
+    opacity:0.25;
+position:fixed;
+top:0;
+left:0;
+background-image: url("images/dark-gray-background-2.jpg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 100%; /* You must set a specified height */
+    width:100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
 
 body{
 background:#000000;
 color:#FFFFFF;
-font-family: 'Poppins', sans-serif;
+font-family: 'Lato', sans-serif;
 font-size:16px;
 font-weight: normal;
 font-style: normal;
@@ -70,6 +81,7 @@ text-rendering: optimizeLegibility !important;
 text-rendering: optimizeLegibility !important;
 -webkit-font-smoothing: antialiased !important;
 -moz-osx-font-smoothing: grayscale !important;
+    
 }
 	
 *:focus{
@@ -118,11 +130,14 @@ letter-spacing:0em;
 	
 .hero-container .hero-title{
 font-weight:700;
-font-size:3em;;
-letter-spacing:0px;
+font-size:4em;;
+letter-spacing:0.025em;
     position:relative;
-color:#C012D1;
-    font-family: 'Poppins', sans-serif;
+font-family: 'Patua One', sans-serif;
+    background-image: url('images/gray-mask-font.png');
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
     
@@ -142,9 +157,9 @@ position:relative;
   
 
 .hero-container .buy-button{
-color: #000000;
-background-color: #C012D1;
-border-color: #C012D1;
+color: #0C0D0D;
+background-color: #D1D1D1;
+border-color: #D1D1D1;
 position: relative;
 z-index: 1;
 overflow: hidden;
@@ -160,13 +175,13 @@ font-size:1em;
 }
 
 .hero-container .telegram-button{
-color: #C012D1;
+color: #D1D1D1;
 background-color: transparent;
 
 position: relative;
 z-index: 1;
 overflow: hidden;
-border: solid 2px #C012D1;
+border: solid 2px #D1D1D1;
 border-radius:1em;
 padding:16px 20px;
 font-weight:600;
@@ -193,8 +208,16 @@ font-size:1em;
 .section-title{
 font-size:3em;
 font-weight:700;
-font-family:'Poppins', sans-serif;
+font-family:'Patua One', sans-serif;
 /*text-shadow: 10px #2C174F;*/
+    letter-spacing:0.025em;
+    position:relative;
+color:#C012D1;
+    font-family: 'Patua One', sans-serif;
+    background-image: url('images/gray-mask-font.png');
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* ---------------- */
@@ -202,16 +225,15 @@ font-family:'Poppins', sans-serif;
 /* ABOUT SECTION */
 
 .about-section{
-background:#FFFFFF;
 }
 
 .about-container{
-color:#000000;
+color:#FFFFFF;
 padding-bottom:0 !important;
 }
 
 .about-container .about-title{
-   color:#C012D1;
+   color:#0C0D0D;
 }
 
 .about-container .about-description{
@@ -222,11 +244,10 @@ padding-bottom:0 !important;
 /* FEATURES SECTION */
 
 .features-section{
-background:#FFFFFF;
 }
 
 .features-container{
-color:#C012D1;
+color:#FFFFFF;
 padding-top:0 !important;
 }
 
@@ -237,10 +258,14 @@ padding-top:0 !important;
 }
 
 .features-container .tax-card{
- border:2px solid #C012D1;
+    background:#000000;
 border-radius:1em;
 max-width:480px;
-background:transparent;
+    background-image: url("images/dark-gray-background-2.jpg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+ background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover 
 }
 
 .features-container .tax-title{
@@ -275,7 +300,7 @@ font-weight:400;
 }
 
 .tokenomics-container{
-color:#C012D1;
+color:#FFFFFF;
 }
 
 .tokenomics-container .tokenomics-title{
@@ -350,11 +375,10 @@ max-width:730px;
 /* ROADMAP SECTION */ 
 
 .roadmap-section{
-background:#FFFFFF;
 }
 	
 .roadmap-container{
-color:#000000;
+color:#FFFFFF;
 }
 
 .roadmap-container ul > li{
@@ -367,7 +391,7 @@ margin-top:4px;
 }
 
 .roadmap-container h4{
-color:#C012D1;
+color:#FFFFFF;
 }
 
 /* ---------------- */
@@ -388,7 +412,6 @@ color:#C012D1;
     /* ROADMAP SECTION */ 
 
 .faq-section{
-background:#FFFFFF;
 }
 	
 .faq-container{
@@ -442,7 +465,7 @@ margin-bottom:24px;
 }
 
 .footer-container a{
-color:#C012D1;
+color:#FFFFFF;
 font-size:1.25em;
 font-weight:500;
 }
@@ -469,7 +492,7 @@ font-size:1.5em;
 
 .hero-container .hero-title{
 font-weight:700;
-font-size:3.5em;
+font-size:5em;
 letter-spacing:0px;
 }
     
@@ -656,8 +679,8 @@ background-repeat: no-repeat;
 <nav class="navbar navbar-expand-lg navbar-dark" id="#home">
 <div class="container" data-aos="fade">
 <a class="navbar-brand d-flex flex-row justify-content-center align-items-center" href="/">
-    <img class="img-fluid me-2 d-none" src="images/front-coin-3.png" width="40px">
-<h1 class="mb-0" style="font-size:1em;font-weight:300;color:#C012D1">$KUMABANK</h1></a>
+    <img class="img-fluid me-2" src="images/logo-only.png" width="46px">
+<h1 class="mb-0 d-none" style="font-size:1em;font-weight:300;color:#C012D1">$KUMABANK</h1></a>
 <button id="navToggler" class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 <div class="navbar-collapse collapse" id="navbarTogglerDemo02" style="">
 <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
@@ -676,24 +699,25 @@ background-repeat: no-repeat;
 
 <main>
     
-
+    <div class="background"><div class="overlay"></div></div>
     
-<section class="hero-section">
+<section class="hero-section" style="position:relative;">
+    
 <div class="hero-container container py-5 d-flex flex-column justify-content-center align-items-center" data-aos="fade">
 <div class="row">
 
 <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center" data-aos="fade-right">
 
-<h1 class="hero-title text-center">Kuma Bank</h1>
+<h1 class="hero-title text-center">NEW GANG</h1>
 
-<p class="hero-description mt-1">Kuma Bank is a hyper-deflationary, community-driven token on the Binance Smart Chain.</p>
+<p class="hero-description mt-1">New Gang is a hyper-deflationary, community-driven token on the Binance Smart Chain.</p>
 <div class="d-flex flex-column flex-sm-row mt-3">
 <a type="button" class="buy-button btn btn-primary m-2 " href="https://pancakeswap.finance/swap?outputCurrency=0xdbf17a3263fe1ee64d8a4d28153e85032ce427ca" target="_blank">Buy On Pancakeswap</a>
 <a type="button" class="telegram-button btn btn-primary m-2" href="https://t.me/newgangbsc" target="_blank">Join Our Telegram</a>
 </div>
 </div><div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center py-5" data-aos="fade-left" style="position:relative;">
 
-<div class="hero-img-wrapper"><img class="hero-img" src="images/kumabank-3.png" style="background:#FFFFFF;"></div>
+<div class="hero-img-wrapper"><img class="hero-img" src="images/logo-only-2.png"></div>
 
 
 
@@ -720,7 +744,7 @@ background-repeat: no-repeat;
 
 <div class="col-12 col-lg-4 mb-4" data-aos="fade">
 <div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto">
-<img class="img-fluid mb-4" src="images/community-driven-4.png" style="max-height:100px;">
+<img class="img-fluid mb-4" src="images/community-driven.png" style="max-height:100px;">
 <span class="tax-title-2 text-center mb-2">Community Driven</span><span class="tax-description text-center">Community focused and fair launched. The future of the project will depend on the community.</span>
 </div>
 </div>
@@ -728,7 +752,7 @@ background-repeat: no-repeat;
 
 <div class="col-12 col-lg-4 mb-4" data-aos="fade">
 <div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto">
-<img class="img-fluid mb-4" src="images/lp-lock-4.png" style="max-height:100px;">
+<img class="img-fluid mb-4" src="images/lp-lock.png" style="max-height:100px;">
 <span class="tax-title-2 text-center mb-2">Secured By Design</span><span class="tax-description text-center">Initial Liquidity Provided will be locked. This ensures that the project will not be rug-pulled.</span>
 </div>
 </div><div class="col-12 col-lg-4 mb-4" data-aos="fade">
@@ -1074,4 +1098,11 @@ AOS.init({
 
 });
 </script>
+
+
+
+
+
+
+
 </body></html>
